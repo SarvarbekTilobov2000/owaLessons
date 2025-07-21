@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // outline: red solid 2px;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #141D2F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 50%;
+        font-family: space mono;
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 2rem 0;
+
+            p {
+                opacity: 0.5;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
+        }
+
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E2A47;
+            padding: 0.5rem 1rem 0.5rem 2rem;
+            border-radius: 20px;
+
+            p {
+                display: flex;
+                align-items: center;
+                width: 50%;
+
+                i {
+                    padding-right: 0.3rem;
+                }
+
+                input {
+                    width: 100%;
+                    color: white;
+                    padding: 0.5rem;
+                    font-size: 20px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+
+            span {
+
+                color: rgb(255, 0, 0);
+
+                button {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 20px;
+                    color: white;
+                    background-color: #60ABFF;
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .tablet-btn {
+                display: none;
+            }
+        }
+
+        .card {
+            background-color: #1E2A47;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            border-radius: 20px;
+            display: flex;
+
+            img {
+                width: 30%;
+                height: 9rem;
+            }
+
+            .info {
+                padding: 0.5rem 1rem;
+
+                .line-1 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .p {
+                    padding: 2rem 0;
+                    font-size: 15px;
+                }
+
+                .status-page {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #101725;
+                    padding: 0.3rem 2rem;
+                    border-radius: 15px;
+                    font-size: 14px;
+                }
+
+                .contact {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 2rem 0;
+
+                    a {
+                        padding: 0 0.5rem;
+                    }
+
+                    a:hover {
+                        cursor: pointer;
+                    }
+
+                    .twitter {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        .container {
+            max-width: 50%;
+
+            .heading {
+                width: 100%;
+            }
+
+            label {
+                width: 100%;
+
+                .tablet-btn {
+                    display: block;
+                    padding: 0.5rem 1.5rem;
+                    font-size: 20px;
+                    color: white;
+                    background-color: #60ABFF;
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                .desctop-span {
+                    display: none;
+                }
+            }
+
+            .card {
+                padding: 0 0.5rem;
+                font-size: 10px;
+
+                .status-page {
+                    .repos {
+                        padding: 0 0.5rem;
+                    }
+
+                    .followers {
+                        padding: 0 0.5rem;
+                    }
+
+                    .following {
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:985px) {
+    body {
+        .container {
+            label {
+
+                p {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .card {
+                img {
+                    width: 20%;
+                    height: 5rem;
+                }
+
+                .info {
+                    padding: 0.5rem 0.6rem;
+
+                    // .line-1 {
+                    //     width: 90%;
+                    // }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:845px) {
+    body {
+
+        .container {
+            width: 500px;
+            max-width: 100%;
+            padding: 0 20px;
+
+            label {
+                .tablet-btn {
+                    padding: 6px 15px;
+                    font-size: 15px;
+                    border-radius: 5px;
+                }
+            }
+
+            .card {
+                .info {
+                    padding: 0rem 0.5rem;
+
+                    h2 {
+                        padding-right: 10px;
+                    }
+
+                                      .status-page {
+                        font-size: 10px;
+
+                        .repos {
+                            padding: 0;
+                            font-size: 10px;
+                        }
+
+                        .followers {
+                            padding: 0;
+                            font-size: 10px;
+                        }
+
+                        .following {
+                            padding: 0;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:680px) {
+    body {
+        .container {
+
+            .card {
+                .info {
+                    .p {
+                        font-size: 10px;
+                        padding: 1rem 0.5rem;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:620px) {
+    body {
+        .container {
+
+            .card {
+                .info {
+                    .p {
+                        font-size: 10px;
+                        padding: 1rem 0.5rem;
+                    }
+
+                    .status-page>* {
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:370px) {
+    body {
+        .container {
+            .card {
+                .info {
+                    .status-page {
+                        padding: 5px 10px;
+                    }
+
+                    .status-page>* {
+                        padding: 0 5px;
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

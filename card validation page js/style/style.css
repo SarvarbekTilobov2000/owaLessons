@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1262px;
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+}
+body .c-1 {
+  width: 30%;
+  height: 100vh;
+  background-image: url(/img/gradient-1.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+}
+body .c-1 .front-card,
+body .c-1 .back-card {
+  transform: translateX(130px);
+  width: 350px;
+  height: 200px;
+  color: white;
+  background-image: url(../img/gradient-2.png);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+  border-radius: 5px;
+}
+body .c-1 .front-card img,
+body .c-1 .back-card img {
+  width: 80px;
+}
+body .c-1 .front-card h3,
+body .c-1 .back-card h3 {
+  font-size: 25px;
+}
+body .c-1 .front-card .wrapper,
+body .c-1 .back-card .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+body .c-1 .front-card .wrapper p,
+body .c-1 .back-card .wrapper p {
+  display: inline-block;
+}
+body .c-1 .back-card {
+  transform: translateX(180px);
+  background-image: url(/img/gradient-3.png);
+  padding: 20px 0px;
+  align-items: center;
+}
+body .c-1 .back-card .line {
+  width: 100%;
+  height: 40px;
+  background-color: #2F2F2F;
+}
+body .c-1 .back-card .card-cvc {
+  width: 80%;
+  height: 30px;
+  margin: 0px auto;
+  background-color: #ADB5BE;
+  text-align: end;
+  vertical-align: middle;
+  padding: 3px;
+  letter-spacing: 4px;
+  border-radius: 3px;
+}
+body .c-1 .back-card .info {
+  width: 45%;
+  height: 20px;
+}
+body .c-2 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+body .c-2 .input-error {
+  border: 2px solid red;
+}
+body .c-2 form {
+  max-width: 350px;
+  padding: 10px;
+}
+body .c-2 form h2 {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+body .c-2 form input {
+  width: 100%;
+  border: rgba(0, 0, 0, 0.24) 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+}
+body .c-2 form .confirm-btn {
+  width: 100%;
+  background-color: #21092F;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+body .c-2 form .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+body .c-2 form .wrapper .b {
+  flex-basis: 48%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .c-2 form .wrapper .b .input-month,
+body .c-2 form .wrapper .b .input-year {
+  flex-basis: 48%;
+}
+body .c-2 form .wrapper .b1 {
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  body .c-1 .front-card,
+  body .c-1 .back-card {
+    transform: translateX(50px);
+  }
+}
+@media (max-width: 900px) {
+  body .c-1 {
+    width: 40%;
+  }
+  body .c-1 .front-card,
+  body .c-1 .back-card {
+    transform: translateX(50px);
+    max-width: 280px;
+    height: 160px;
+  }
+  body .c-1 .front-card img,
+  body .c-1 .back-card img {
+    width: 50px;
+  }
+  body .c-1 .front-card h3,
+  body .c-1 .back-card h3 {
+    font-size: 15px;
+  }
+  body .c-1 .front-card .wrapper,
+  body .c-1 .back-card .wrapper {
+    font-size: 10px;
+  }
+  body .c-1 .front-card .wrapper p,
+  body .c-1 .back-card .wrapper p {
+    font-size: 9px;
+  }
+  body .c-1 .back-card .line {
+    width: 100%;
+    height: 30px;
+    background-color: #2F2F2F;
+  }
+  body .c-1 .back-card .cvc {
+    width: 60%;
+    height: 20px;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+  body .c-1 .back-card .info {
+    width: 35%;
+    height: 15px;
+  }
+  body .c-2 {
+    width: 60%;
+  }
+  body .c-2 form {
+    max-width: 250px;
+  }
+  body .c-2 form input {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 666px) {
+  body {
+    display: block;
+  }
+  body .c-1 {
+    width: 100%;
+    padding: 10px;
+    height: 41vh;
+    position: relative;
+    background-size: cover;
+  }
+  body .c-1 .front-card {
+    transform: none;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  body .c-1 .back-card {
+    transform: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  body .c-2 {
+    width: 100%;
+    height: 59vh;
+    align-items: center;
+  }
+  body .c-2 form {
+    max-width: 250px;
+  }
+  body .c-2 form input {
+    padding: 5px;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

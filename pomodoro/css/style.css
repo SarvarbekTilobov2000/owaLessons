@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body .hide {
+  display: none !important;
+}
+body .show {
+  display: block !important;
+}
+body .input-error {
+  border: red solid 2px !important;
+}
+body .active {
+  background-color: tomato !important;
+  color: #1E213F !important;
+}
+body .active-font {
+  background-color: #161932 !important;
+  color: #fff !important;
+}
+body .active-color {
+  color: #000 !important;
+}
+body .container {
+  position: relative;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #1E213F;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .container nav {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 20px;
+  gap: 20px;
+  background-color: #161931;
+  text-decoration: none;
+}
+body .container nav p {
+  padding: 10px;
+  border-radius: 15px;
+  color: #D7E0FF;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body .container .round {
+  border: #E4593F solid 10px;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #161931;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #161931;
+}
+body .container .round div {
+  width: 180px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body .container .round h1 {
+  font-size: 50px;
+}
+body .container .set-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+body .container .set-wrapper .set-modal {
+  width: 400px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+  color: #161932;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .set-wrapper .set-modal .title {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+body .container .set-wrapper .set-modal .title h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+body .container .set-wrapper .set-modal .title img {
+  height: 25px;
+}
+body .container .set-wrapper .set-modal .timeMinutes {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+body .container .set-wrapper .set-modal .inputs {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .set-wrapper .set-modal .inputs div {
+  width: 30%;
+}
+body .container .set-wrapper .set-modal .inputs div p {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.6;
+  padding: 10px 0;
+}
+body .container .set-wrapper .set-modal .inputs div input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #EAECF5;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+body .container .set-wrapper .set-modal .font,
+body .container .set-wrapper .set-modal .color {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+body .container .set-wrapper .set-modal .font ul,
+body .container .set-wrapper .set-modal .color ul {
+  display: flex;
+  list-style: none;
+}
+body .container .set-wrapper .set-modal .font ul li,
+body .container .set-wrapper .set-modal .color ul li {
+  padding: 10px;
+  border-radius: 50%;
+}
+body .container .set-wrapper .set-modal .font ul .roboto,
+body .container .set-wrapper .set-modal .color ul .roboto {
+  font-family: "Roboto Slab", serif;
+}
+body .container .set-wrapper .set-modal .font ul .space,
+body .container .set-wrapper .set-modal .color ul .space {
+  font-family: "Space Mono", monospace;
+}
+body .container .set-wrapper .set-modal .color ul {
+  display: flex;
+  gap: 10px;
+}
+body .container .set-wrapper .set-modal .color ul li {
+  padding: 10px 12px;
+  color: transparent;
+}
+body .container .set-wrapper .set-modal .apply {
+  margin: 0 auto;
+  padding: 12px 40px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: tomato;
+  border-radius: 30px;
+  transform: translateY(40px);
+}/*# sourceMappingURL=style.css.map */

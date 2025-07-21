@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1290px;
+  min-height: 100vh;
+  background-color: #E0F1E8;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+body form {
+  margin: 0px auto;
+  max-width: 580px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+body form h1 {
+  flex-basis: 100%;
+}
+body form .textWrap {
+  flex-basis: 100%;
+}
+body form .textWrap textarea {
+  padding: 4px;
+}
+body form label {
+  flex-basis: 45%;
+}
+body form label p {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+body form label input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: rgba(0, 0, 0, 0.297) 2px solid;
+}
+body form label textarea {
+  width: 100%;
+  border: rgba(0, 0, 0, 0.297) 2px solid;
+}
+body form .email {
+  flex-basis: 100%;
+}
+body form p {
+  flex-basis: 100%;
+}
+body form .query {
+  border: rgba(0, 0, 0, 0.297) 2px solid;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+body form p input {
+  margin-right: 10px;
+}
+body form p span {
+  display: none;
+  font-style: italic;
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
+body form .chackboxWrap {
+  height: 40px;
+}
+body form .submitBtn {
+  flex-basis: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #0C7D69;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+body .message {
+  width: 340px;
+  background-color: #2A4144;
+  color: white;
+  padding: 20px;
+  border: rgba(0, 0, 0, 0.297) solid 2px;
+  border-radius: 10px;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  display: none;
+}/*# sourceMappingURL=style.css.map */

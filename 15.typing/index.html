@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* body{
+			background-color: black ;
+			color: white;
+		} */
+		h1{
+			display: flex;
+		}
+		span{
+			display: block;
+			/* border: 1px solid black; */
+			margin-right: 10px;
+			padding: 5px;
+		}
+		.active{
+			background: grey;
+			position: relative;
+		}
+		.active::after{
+			content:"";
+			height: 2px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			right: -5px;
+			animation: cursorAnim 2s infinite ;
+			margin:  0 auto;
+			transform: rotate(90deg);
+		}
+		.correct{
+			background: green;
+		}
+		.wrong{
+			background: red;
+		}
+		
+
+		@keyframes cursorAnim {
+			from{
+				width: 0;
+
+			}to{
+				width:  20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1></h1>
+	
+	<script src='./script.js'></script>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+$password-bg: #24232b;
+$green: #a4ffaf;
+$white: #e6e5ea;
+$grey: #817d92;
+
+.password-generator {
+  background: $password-bg;
+  color: $white;
+  width: 400px;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+
+  h1 {
+    text-align: center;
+    color: $grey;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .output {
+    display: flex;
+    background: #18171f;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      background: transparent;
+      border: none;
+      color: $green;
+      font-size: 1.2rem;
+      width: 100%;
+      outline: none;
+    }
+
+    .copy-btn {
+      background: none;
+      border: none;
+      color: $green;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .settings {
+    margin-top: 1.5rem;
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    #length {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .value {
+      float: right;
+      color: $green;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+
+      input {
+        margin-right: 0.8rem;
+      }
+
+      label {
+        font-size: 0.95rem;
+      }
+    }
+
+    .strength {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #18171f;
+      padding: 1rem;
+      margin: 1rem 0;
+
+      span {
+        font-size: 0.9rem;
+        color: $grey;
+      }
+
+      .bars {
+        display: flex;
+        gap: 5px;
+
+        .bar {
+          width: 10px;
+          height: 25px;
+          background: transparent;
+          border: 1px solid $white;
+        }
+      }
+    }
+
+    .generate-btn {
+      width: 100%;
+      padding: 1rem;
+      background: $green;
+      color: #18171f;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.3s;
+
+      &:hover {
+        background: lighten($green, 10%);
+      }
+    }
+  }
+}

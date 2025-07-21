@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    .container {
+        width: 70%;
+        display: flex;
+        color: white;
+        padding: 0px;
+
+        .box1 {
+            background-color: #E28625;
+
+            .btn {
+                color: #E28625;
+            }
+        }
+
+        .box2 {
+            background-color: #00656D;
+
+            .btn {
+                color: #00656D;
+            }
+        }
+
+        .box3 {
+            background-color: #004140;
+
+            .btn {
+                color: #004140;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        width: 100%;
+        padding: 2rem 0rem;
+
+        .container {
+            flex-direction: column;
+
+        
+
+            .box1 {
+                padding: 100px 0px;
+                h1 {
+                    padding: 5rem 0rem;
+                    color: red;
+                }
+            }
+
+            .box2 {
+                padding: 100px 0px;
+            }
+
+            .box3 {
+                padding: 100px 0px;
+            }
+        }
+    }
+}

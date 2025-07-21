@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    header {
+        .wrap {
+            display: flex;
+            border: red solid 2px;
+            align-items: center;
+            padding: 20px;
+            list-style-type: none;
+            justify-content: center;
+            color: aqua;
+            gap: 50px;
+        }
+    }
+}

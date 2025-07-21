@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8196078431);
+}
+body .hide {
+  display: none !important;
+}
+body .active {
+  display: block !important;
+}
+body header nav {
+  padding: 0px 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav ul,
+body header nav div {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  align-items: center;
+}
+body header nav ul li,
+body header nav div li {
+  font-size: 15px;
+  font-weight: 400;
+}
+body header nav div img {
+  width: 40px;
+}
+body main {
+  height: 100vh;
+}
+body main .tab img {
+  border-radius: 10px;
+}
+body main .tab .tab-contents {
+  padding: 30px 0px;
+}
+body main .tab .tab-contents img {
+  display: none;
+  margin: 0px auto;
+  width: 400px;
+  height: 400px;
+}
+body main .tab ul {
+  margin: 0px auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 400px;
+  gap: 10px;
+}
+body main .tab ul img {
+  display: flex;
+  width: 88px;
+  height: 88px;
+}
+body main .tab ul img:hover {
+  border: #FF7E1B solid 2px;
+}
+body main .modal-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.708);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .modal-wrap img {
+  border-radius: 15px;
+}
+body main .modal-wrap .modal {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+body main .modal-wrap .modal .cross {
+  color: white;
+  font-size: 30px;
+  transform: translateX(-40px);
+}
+body main .modal-wrap .modal .content-wrap {
+  display: flex;
+  align-items: center;
+}
+body main .modal-wrap .modal .content-wrap button {
+  padding: 5px 12px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: none;
+}
+body main .modal-wrap .modal .content-wrap .content {
+  width: 380px;
+  height: 400px;
+}
+body main .modal-wrap .modal .items {
+  margin: 0px auto;
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .modal-wrap .modal .items img {
+  width: 23%;
+  height: 90px;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */

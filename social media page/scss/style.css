@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 50px;
+  background-color: #1D1F29;
+  color: white;
+}
+body main .dashboard-bar {
+  padding: 20px 0;
+}
+body main .dashboard-bar .w {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Tugma qutisi uchun asosiy uslub */
+  /* Tugmani yashirish */
+  /* Slayder uslubi */
+  /* Slayderni ichki dumaloq shakli */
+  /* Faol holatdagi rang */
+  /* Dumaloq shaklni o‘ng tomonga surish */
+}
+body main .dashboard-bar .w .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+body main .dashboard-bar .w .switch input {
+  display: none;
+}
+body main .dashboard-bar .w .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+body main .dashboard-bar .w .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+body main .dashboard-bar .w input:checked + .slider {
+  background: linear-gradient(90deg, #1cb5e0, #0008ff);
+}
+body main .dashboard-bar .w input:checked + .slider:before {
+  transform: translateX(25px);
+}
+body main .ul-1 li {
+  border-color: red;
+  text-align: center;
+  border-top: 5px solid #178FF5;
+  padding: 40px 0;
+  line-height: 30px;
+}
+body main .ul-1 li h1 {
+  padding-top: 20px;
+}
+body main .ul-1 li p {
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+body main .ul-1 li small {
+  color: #1F9378;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .ul-1 li:nth-child(3) {
+  border-top: 5px solid #E96F86;
+}
+body main .ul-1 li:nth-child(4) {
+  border-top: solid 5px #C4032B;
+}
+body main .ul-1 li:nth-child(4) small {
+  color: #C4032B;
+}
+body main .ul-1 span:nth-child(2) {
+  opacity: 0.5;
+}
+body main ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+body main ul li {
+  width: 23%;
+  list-style: none;
+  background-color: #252B42;
+  border-radius: 10px;
+}
+body .overview {
+  padding: 50px 0;
+}
+body .ul-2 li {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .ul-2 div {
+  display: flex;
+  justify-content: space-between;
+  border: red solid 2px;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

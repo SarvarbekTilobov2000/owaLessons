@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/st/style.css">
+    <title>Validation</title>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Contact Us</h1>
+
+        <label for="#">
+            <p>First Name</p>
+            <input type="text" class="firstName">
+        </label>
+
+        <label for="#">
+            <p>Last Name</p>
+            <input type="text" class="lastName">
+        </label>
+
+        <label for="#" class="email">
+            <p>Email Address</p>
+            <input class="email" class="email">
+        </label>
+
+        <p>Query Type</p>
+        <div for="#" class="query">
+            <input name="req" type="radio" class="radio">General Enquiry <br>
+            <span></span>
+        </div>
+        <div for="#" class="query">
+            <input name="req" type="radio" class="radio">Support Request
+        </div>
+
+        <label for="#" class="textWrap">
+            <p>Message</p>
+            <textarea name="textarea" class="textarea" cols="50" rows="5"></textarea>
+        </label>
+
+        <p class="chackboxWrap">
+            <input type="checkbox" class="checkbox">I consent to being contacted by the team * <br>
+            <span class="err">To submit this form, please consent to being contacted</span>
+        </p>
+
+        <button type="submit" class="submitBtn">Submit</button>
+    </form>
+    <div class="message">
+        <h1><img src="succes.svg" alt=""> Message Sent!</h1>
+        <br>
+        <p>Thanks for completing the form. We’ll be in touch soon!</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

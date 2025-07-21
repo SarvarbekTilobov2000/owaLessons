@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.night_body {
+  background-color: rgba(0, 0, 0, 0.893);
+  color: white;
+}
+.night_body .note li {
+  border-bottom: white 2px solid;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  font-family: sans-serif;
+  min-height: 100vh;
+  padding: 0 0 15px 0;
+}
+body .hide {
+  display: none;
+}
+body .show {
+  display: block;
+}
+body .note {
+  width: 500px;
+  margin: 0px auto;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body .note h1 {
+  text-align: center;
+}
+body .note ul {
+  text-align: start;
+  list-style-type: none;
+}
+body .note ul li {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: rgba(0, 0, 0, 0.258) 2px solid;
+}
+body .note ul li label input {
+  width: 14px;
+  height: 14px;
+  margin-right: 15px;
+}
+body .note .btn1 {
+  position: absolute;
+  right: 0px;
+  bottom: -60px;
+  font-size: 40px;
+  border: none;
+  background-color: rgba(52, 52, 173, 0.705);
+  padding: 5px 16px;
+  color: white;
+  border-radius: 50%;
+}
+body .nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .nav input {
+  padding: 10px;
+  border: blue 2px solid;
+  border-radius: 5px;
+  flex-basis: 70%;
+}
+body .nav button {
+  padding: 10px 20px;
+  background-color: blue;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+body .nav i {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+body .modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  padding-top: 200px;
+}
+body .modal .wrap {
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+body .modal .wrap input {
+  width: 90%;
+  padding: 10px;
+}
+body .modal .wrap div {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 12px 0px;
+}
+body .modal .wrap div .cencel,
+body .modal .wrap div .apply {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: solid 2px rgba(52, 52, 173, 0.705);
+  background-color: transparent;
+  color: rgba(52, 52, 173, 0.705);
+  font-weight: 700;
+}
+body .modal .wrap div .apply {
+  border: none;
+  background-color: rgba(52, 52, 173, 0.705);
+  color: white;
+}/*# sourceMappingURL=style.css.map */

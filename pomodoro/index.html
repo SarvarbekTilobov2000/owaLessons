@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>pomodoro</h1>
+
+        <nav>
+            <p class="active">pomodoro</p>
+            <p>short break</p>
+            <p>long break</p>
+        </nav>
+
+        <div class="round">
+            <div>
+                <h1 class="minutes"></h1> : <h1 class="seconds"></h1>
+            </div>
+            <p>pause</p>
+        </div>
+        
+        <img src="setting.svg" alt="setting" class="setting">
+
+        <!-- MODAL BOX -->
+        <div class="set-wrapper hide">
+            <div class="set-modal">
+                <div class="title">
+                    <h2>Settings</h2>
+                    <img src="cross.png" alt="" class="cros">
+                </div>
+
+                <br>
+                <hr><br>
+
+                <p class="timeMinutes">TIME (MINUTES)</p>
+
+                <div class="inputs">
+                    <div>
+                        <p>pomodoro</p>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <p>short break</p>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <p>long break</p>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="font">
+                    <h2>Font</h2>
+                    <ul>
+                        <li class="active-font">Aa</li>
+                        <li class="roboto">Aa</li>
+                        <li class="space">Aa</li>
+                    </ul>
+                </div>
+
+
+                <div class="color">
+                    <h2>Color</h2>
+                    <ul>
+                        <li style="background-color: #F87070;" class="active-color"><i class="fa-solid fa-check"></i>
+                        </li>
+                        <li style="background-color: #70F3F8;"><i class="fa-solid fa-check"></i></li>
+                        <li style="background-color: #D881F8;"><i class="fa-solid fa-check"></i></li>
+                    </ul>
+                </div>
+
+                <button class="apply">Apply</button>
+            </div>
+        </div>
+        <!-- MODAL BOX /-->
+
+
+    </div>
+</body>
+
+<script src="src.js"></script>
+
+</html>

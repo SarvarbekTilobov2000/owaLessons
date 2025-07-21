@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Kumbh Sans", sans-serif;
+background-color: #000000d1;
+    .hide {
+        display: none !important;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    header {
+        nav {
+            padding: 0px 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul,
+            div {
+                display: flex;
+                gap: 50px;
+                list-style: none;
+                align-items: center;
+
+                li {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+
+            div {
+                img {
+                    width: 40px;
+                }
+            }
+
+        }
+    }
+
+    main {
+        height: 100vh;
+        
+
+        .tab {
+
+            img {
+                border-radius: 10px;
+            }
+
+            .tab-contents {
+                padding: 30px 0px;
+
+                img {
+                    display: none;
+                    margin: 0px auto;
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            ul {
+                margin: 0px auto;
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+                width: 400px;
+                gap: 10px;
+
+                img {
+                    display: flex;
+                    width: 88px;
+                    height: 88px;
+                }
+
+                img:hover {
+                    border: #FF7E1B solid 2px;
+                }
+            }
+        }
+
+        .modal-wrap {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.708);
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                border-radius: 15px;
+            }
+
+            .modal {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 10px;
+
+                .cross {
+                    color: white;
+                    font-size: 30px;
+                    transform: translateX(-40px);
+                }
+
+                .content-wrap {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        padding: 5px 12px;
+                        font-size: 25px;
+                        border-radius: 50%;
+                        border: none;
+                    }
+
+                    .content {
+                        width: 380px;
+                        height: 400px;
+                        // height: 78%;
+                        // width: 90%;
+                    }
+                }
+
+                .items {
+                    margin: 0px auto;
+
+                    width: 380px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    img {
+                        width: 23%;
+                        height: 90px;
+                        padding: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}

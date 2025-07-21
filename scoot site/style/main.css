@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+body .btn-style {
+  background-color: #FCB72B;
+  color: white;
+  padding: 15px 40px;
+  border: 2px solid #FCB72B;
+  font-size: 15px;
+  font-weight: 700;
+}
+body .btn-style:hover {
+  background-color: transparent;
+  color: #FCB72B;
+}
+body header nav {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 700;
+}
+body header nav ul li {
+  color: #939CAA;
+}
+body header nav ul li:hover {
+  color: #FCB72B;
+}
+body main {
+  color: #495567;
+}
+body main .section-1 {
+  background-image: url(/img-1/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 50px 80px;
+  color: white;
+}
+body main .section-1 h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+body main .section-1 .line {
+  padding: 50px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
+}
+body main .section-1 .line img {
+  padding-top: 50px;
+}
+body main .section-1 .line div {
+  flex-basis: 400px;
+}
+body main .section-1 .line div p {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+}
+body main .section-1 .line div button {
+  margin-top: 30px;
+}
+body main .section-1 .line .img-1 {
+  width: 150px;
+}
+body main .section-1 .line .img-2 {
+  width: 200px;
+}
+body main .section-1 .line .img-3 {
+  width: 80px;
+  padding-top: 80px;
+}
+body main .section-2 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 80px;
+}
+body main .section-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 30px;
+}
+body main .section-2 ul img {
+  padding-left: 10px;
+}
+body main .section-2 ul li h3 {
+  padding: 30px 0px;
+  font-weight: 700;
+  font-size: 24px;
+}
+body main .section-2 ul li p {
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.5;
+}
+body main .section-3 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(/img-3/img-1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+body main .section-3 .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+body main .section-3 .wrapper .img-1 {
+  display: none;
+}
+body main .section-3 .wrapper .info {
+  max-width: 500px;
+  width: 100%;
+}
+body main .section-3 .wrapper .info h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+body main .section-3 .wrapper .info p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  padding: 20px 0px;
+}
+body main .section-4 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: url(/img-4/img-1.png);
+}
+body main .section-4 .img-1 {
+  display: none;
+}
+body main .section-4 .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+body main .section-4 .wrapper .info {
+  width: 500px;
+}
+body main .section-4 .wrapper .info h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+body main .section-4 .wrapper .info p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  padding: 20px 0px;
+}
+body main .section-5 {
+  background-image: url(/img-5/img-1.png);
+}
+body footer {
+  color: white;
+}
+body footer .line {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #495567;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/footer-img/bacground.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+body footer .line h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+body footer nav {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 30px 80px;
+  background-color: #323943;
+  color: #596475;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+body footer nav ul li:hover {
+  color: #FCB72B;
+  cursor: pointer;
+}
+body footer nav ul i {
+  font-size: 32px;
+  color: #FCB72B;
+}
+body footer nav ul i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  body .btn-style {
+    padding: 10px 20px;
+  }
+  body header nav {
+    padding: 10px 30px;
+  }
+  body header nav ul {
+    width: 100%;
+    gap: 15px;
+    justify-content: space-around;
+  }
+  body main .section-1 {
+    padding: 30px;
+    background-image: url(/img-1/tablet-background-.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  body main .section-1 .line div {
+    flex-basis: 100%;
+    padding: 50px;
+    margin: 0px auto;
+  }
+  body main .section-1 .line .img-1 {
+    display: none;
+  }
+  body main .section-2 {
+    padding: 30px;
+  }
+  body main .section-2 ul {
+    flex-direction: column;
+  }
+  body main .section-2 ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  body main .section-2 ul li h3 {
+    padding: 20px 0px;
+  }
+  body main .section-3 {
+    background-image: none;
+    background-position: center;
+  }
+  body main .section-3 .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  body main .section-3 .wrapper .img-1 {
+    display: block;
+    width: 100%;
+  }
+  body main .section-4 {
+    background-image: none;
+    background-position: center;
+  }
+  body main .section-4 .img-1 {
+    display: block;
+    width: 100%;
+  }
+  body main .section-4 .wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+  body main .section-4 .wrapper .info {
+    width: 100%;
+  }
+  body main .section-4 .wrapper .info h1 {
+    font-size: 32px;
+  }
+  body footer .line {
+    padding: 30px;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  body footer .line h1 br {
+    display: none;
+  }
+  body footer nav {
+    padding: 30px;
+  }
+  body footer nav ul i {
+    color: #FCB72B;
+  }
+}
+@media (max-width: 600px) {
+  body header nav {
+    padding: 20px 30px;
+  }
+  body header nav ul {
+    justify-content: start;
+    position: relative;
+  }
+  body header nav ul .logo {
+    position: absolute;
+    left: 40%;
+  }
+  body header nav ul li {
+    display: none;
+  }
+  body header nav button {
+    display: none;
+  }
+  body main .section-1 {
+    background-image: url(/img-1/mobile-background.png);
+  }
+  body main .section-1 h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  body main .section-1 h1 br {
+    display: none;
+  }
+  body main .section-1 .line div {
+    padding: 0px 0px 50px;
+  }
+  body main .section-1 .line div button {
+    padding: 15px 40px;
+  }
+  body main .section-1 .line img {
+    padding: 0px;
+  }
+  body main .section-1 .line .img-3 {
+    display: none;
+  }
+  body main .section-2 ul {
+    gap: 40px;
+  }
+  body main .section-2 ul li {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  body main .section-2 ul li h3 {
+    padding-top: 0px;
+  }
+  body main .section-3 .wrapper .info h1 {
+    font-size: 32px;
+  }
+  body footer {
+    text-align: center;
+  }
+  body footer .line h1 {
+    font-size: 32px;
+  }
+  body footer nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body footer nav .ul-1 {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

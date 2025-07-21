@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 50px;
+    background-color: #1D1F29;
+    color: white;
+
+    main {
+        .dashboard-bar {
+            padding: 20px 0;
+
+            .w {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                /* Tugma qutisi uchun asosiy uslub */
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 50px;
+                    height: 25px;
+                }
+
+                /* Tugmani yashirish */
+                .switch input {
+                    display: none;
+                }
+
+                /* Slayder uslubi */
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    border-radius: 25px;
+                    transition: 0.4s;
+                }
+
+                /* Slayderni ichki dumaloq shakli */
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    left: 5px;
+                    bottom: 2.5px;
+                    background-color: white;
+                    border-radius: 50%;
+                    transition: 0.4s;
+                }
+
+                /* Faol holatdagi rang */
+                input:checked+.slider {
+                    background: linear-gradient(90deg, #1cb5e0, #0008ff);
+                }
+
+                /* Dumaloq shaklni o‘ng tomonga surish */
+                input:checked+.slider:before {
+                    transform: translateX(25px);
+                }
+            }
+        }
+
+        .ul-1 {
+            li {
+                border-color: red;
+                text-align: center;
+                border-top: 5px solid #178FF5;
+                padding: 40px 0;
+                line-height: 30px;
+
+                h1 {
+                    padding-top: 20px;
+                }
+
+                p {
+                    opacity: 0.5;
+                    letter-spacing: 5px;
+                }
+
+                small {
+                    color: #1F9378;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            li:nth-child(3) {
+                border-top: 5px solid #E96F86;
+            }
+
+            li:nth-child(4) {
+                border-top: solid 5px #C4032B;
+            }
+
+            li:nth-child(4) {
+                small {
+                    color: #C4032B;
+                }
+            }
+
+            span:nth-child(2) {
+                opacity: 0.5;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            li {
+                width: 23%;
+                list-style: none;
+                background-color: #252B42;
+                border-radius: 10px;
+
+            }
+
+
+        }
+    }
+
+    .overview {
+        padding: 50px 0;
+    }
+
+    .ul-2 {
+        li {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            border: red solid 2px;
+            align-items: center;
+        }
+    }
+}

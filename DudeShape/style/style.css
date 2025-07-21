@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1280px;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+body header {
+  width: 100%;
+}
+body header nav {
+  padding: 20px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+body header nav ul li {
+  font-weight: 400;
+  font-size: 16px;
+}
+body header nav div .fa-bars {
+  padding-left: 20px;
+}
+body main {
+  padding: 50px;
+}
+body main .section-1 {
+  height: 100vh;
+  display: flex;
+  height: 96vh;
+  color: white;
+}
+body main .section-1 .info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #154444;
+  height: 100%;
+}
+body main .section-1 .info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+}
+body main .section-1 .info p {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 30px 0px;
+}
+body main .section-1 .info button {
+  padding: 15px;
+  color: #154444;
+  font-weight: 400;
+  font-size: 20px;
+}
+body main .logos {
+  padding: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main .logos h4 {
+  font-weight: 700;
+  font-size: 32px;
+  padding: 15px;
+  text-align: center;
+  flex-basis: 100%;
+}
+body main .section-2 {
+  display: flex;
+  padding: 50px 0px;
+}
+body main .section-2 .info {
+  padding: 50px;
+}
+body main .section-2 .info h4 {
+  font-weight: 700;
+  font-size: 32px;
+}
+body main .section-2 .info p {
+  font-weight: 400;
+  font-size: 20px;
+}
+body main .section-2 .info ul li {
+  padding: 10px 0px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+body main .section-2 .info ul li div h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #154444;
+}
+body main .section-2 .info ul li div p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+body main .section-3 {
+  border: red solid 2px;
+}
+body main .section-3 h1 {
+  color: red;
+}
+body main .section-3 ul {
+  list-style-type: none;
+}
+body main .section-3 ul li {
+  width: 28%;
+}
+body main .section-3 ul li img {
+  width: 100%;
+}
+body main .section-3 ul li .info {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  border: red solid 1px;
+  flex-wrap: wrap;
+}
+body main .section-3 ul li .info img {
+  width: 25px;
+}/*# sourceMappingURL=style.css.map */

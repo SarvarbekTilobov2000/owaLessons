@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // outline: red solid 2px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0px auto;
+    position: relative;
+    font-family: League Spartan;
+
+    header {
+        width: 100%;
+        padding: 20px 100px;
+        position: absolute;
+    }
+
+    main {
+
+        // section 1
+        .section1 {
+            width: 100%;
+            height: 100vh;
+            color: white;
+            display: flex;
+            font-size: 30px;
+            padding: 150px 100px;
+            background-image: url(/images/desctop-background.png);
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #111111;
+
+            .a1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 35px 0 0;
+
+                img {
+                    display: none;
+                }
+
+                h1 {
+                    padding: 30px 0;
+                    line-height: 80px;
+                    font-weight: 300;
+                    font-size: 80px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                    padding-bottom: 30px;
+                }
+
+                button {
+                    width: 250px;
+                    border: white solid 2px;
+                    font-family: League Spartan;
+                    padding: 17px 20px;
+                    font-weight: 600;
+                    font-size: 17px;
+                    background-color: transparent;
+                    color: white;
+                    outline: hidden;
+                }
+            }
+
+            .a2 {
+                background-color: transparent;
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+
+                h2 {
+                    text-align: center;
+                    background-color: white;
+                    height: 90px;
+                    color: black;
+                    font-weight: 600;
+                    font-size: 48px;
+                    padding: 15px;
+                    margin: 0 20px;
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 500px;
+                    }
+                }
+            }
+        }
+
+        .card1,
+        .card2 {
+            height: 80vh;
+            padding: 0px 100px;
+            display: flex;
+            justify-content: space-between;
+            background-image: url(/images/card1-background.png);
+            background-position: 0px 180px;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                max-width: 380px;
+                transform: translateY(-30px);
+                height: 85vh;
+            }
+
+            .img2 {
+                transform: translateY(30px);
+            }
+
+
+            .info {
+                width: 42%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 48px;
+                    letter-spacing: -0.5px;
+                }
+
+                p {
+                    line-height: 30px;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .card2 {
+            background-image: url(/images/card2-background.png);
+            background-position: right bottom;
+            background-size: 60%;
+        }
+
+        .slide-block {
+            background-color: #111111;
+            display: flex;
+            padding: 100px;
+
+            .info {
+                color: white;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 48px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .sliderWrapper {
+                width: 500px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+
+                button {
+                    .fa-solid {
+                        font-size: 40px;
+                        padding: 2px;
+                    }
+                }
+
+                .slider {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    position: relative;
+
+
+                    .slider-item {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        background: #111111;
+                        display: flex;
+                        flex-direction: column;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.5s;
+                        transform: scale(0);
+
+                        &.activeSlide {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scale(1);
+
+
+                            .img-div {
+                                width: 100%;
+                                height: 80%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .text {
+                                padding: 0px 10px;
+                                margin: 0;
+                                width: 350px;
+                                margin-top: 24px;
+
+                                h2 {
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    letter-spacing: -0.25px;
+                                    color: #FFFFFF;
+                                }
+
+                                p {
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    letter-spacing: 0;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        font-size: 50px;
+                        background-color: transparent;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        // section 2
+        .section2 {
+            width: 100%;
+            position: relative;
+            padding: 30px 100px;
+
+            .linear-bar {
+                width: 100px;
+                position: absolute;
+                padding-top: 10px;
+            }
+
+            .card {
+                padding: 30px 0 0 30px;
+                display: flex;
+
+                img {
+                    width: 45%;
+                }
+
+                .desctop-info {
+                    padding: 90px;
+                    color: #111111;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 48px;
+                    }
+
+                    .text {
+                        line-height: 25px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+
+                    button {
+                        padding: 18px 55px;
+                        color: white;
+                        border: none;
+                        background-color: #111111;
+                        margin: 40px 0;
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+
+                    .p {
+                        opacity: 0.4;
+                        padding: 2px 0;
+                    }
+                }
+            }
+        }
+
+
+        .book {
+            padding: 80px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url(/images/book.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+
+            h1 {
+                font-weight: 700;
+                font-size: 48px;
+            }
+
+            button {
+                font-weight: 600;
+                font-size: 17px;
+                padding: 15px 30px;
+            }
+        }
+    }
+
+    footer {
+        background-color: black;
+        padding: 100px;
+        color: white;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 5px 0px;
+            }
+        }
+    }
+}
+
+// tablet devices
+@media (max-width:1036px) {
+    body {
+        header {
+            img {
+                display: none;
+            }
+        }
+
+        main {
+
+            //section 1
+            .section1 {
+                background-image: url(/images/tablet-background-s1.png);
+                background-position: center;
+                background-size: contain;
+                background-position: top;
+                text-align: center;
+                flex-direction: column;
+                padding: 100px 50px;
+
+                .a1 {
+                    align-items: center;
+                    padding-top: 400px;
+
+                    img {
+                        display: block;
+                    }
+
+                    h1 {
+                        line-height: 80px;
+                        font-weight: 300;
+                        font-size: 48px;
+                    }
+
+                }
+
+                .a2 {
+                    display: none;
+                }
+            }
+
+            .card1 {
+                display: block;
+                // border: red solid 2px;
+            }
+
+            // .card2 {
+            //     display: block;
+
+            //     img {
+            //         padding-bottom: 100px;
+            //     }
+
+            //     h1 {
+            //         padding: 0 20px;
+            //     }
+
+            //     img {
+            //         transform: scale(0.85);
+            //     }
+            // }
+
+            // section 2
+            .section2 {
+                .card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 20px 10px 100px;
+                    font-size: 25px;
+
+                    // .desctop-table {
+                    //     display: none;
+                    // }
+
+                    // .desctop-info {
+                    //     display: none;
+                    // }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:780px) {
+    body {
+
+        main {
+
+            // section 1
+            .section1 {
+                background-image: url(/images/mobile-s1-img.png);
+                padding: 50px 10px;
+
+                .a1 {
+                    padding-top: 420px;
+                    padding-bottom: 200px;
+                    gap: 20px;
+
+                    h1 {
+                        line-height: 55px;
+                        font-size: 60px;
+                    }
+
+                    button {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+
+            .section2 {
+                .card {
+                    div {
+                        line-height: 45px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// mobile devices
+@media(max-width:600px) {
+    body {
+        main {
+            .section1 {
+                padding: 10px;
+
+                .a1 {
+                    gap: 20px;
+                    padding: 300px 0px 0px;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 300;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+
+                    button {
+                        width: 245px;
+                    }
+                }
+            }
+
+            .section2 {
+                .card {
+                    div {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

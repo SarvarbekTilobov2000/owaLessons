@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body .btn-style {
+  background-color: #FCB72B;
+  color: white;
+  padding: 15px 40px;
+  border: 2px solid #FCB72B;
+  font-size: 15px;
+  font-weight: 700;
+}
+body .btn-style:hover {
+  background-color: transparent;
+  color: #FCB72B;
+}
+body header nav {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav .icon {
+  display: none;
+}
+body header nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 700;
+}
+body header nav ul li {
+  color: #939CAA;
+}
+body header nav ul li:hover {
+  color: #FCB72B;
+}
+body .about-page {
+  font-family: "Space Mono", monospace;
+  color: #495567;
+}
+body .about-page .title {
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 80px;
+  margin: 0px auto;
+  background-image: url(/about-page/title-img/background.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .about-page .about-section-1 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(/about-page/img-1/img-2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+body .about-page .about-section-1 .wrapper {
+  margin: 0px auto;
+  padding: 150px 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+body .about-page .about-section-1 .wrapper .img-1 {
+  border-radius: 50%;
+}
+body .about-page .about-section-1 .wrapper .info {
+  max-width: 500px;
+  width: 100%;
+}
+body .about-page .about-section-1 .wrapper .info h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+body .about-page .about-section-1 .wrapper .info p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  padding: 20px 0px;
+}
+body .about-page .about-section-2 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-position: left;
+}
+body .about-page .about-section-2 .wrapper {
+  background-image: url(/about-page/img-2/img-2.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+body .about-page .about-section-2 .wrapper img {
+  width: 40%;
+}
+body .about-page .about-section-2 .wrapper .info {
+  max-width: 500px;
+  width: 100%;
+}
+body .about-page .about-section-2 .wrapper .info h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+body .about-page .about-section-2 .wrapper .info p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  padding: 20px 0px;
+}
+body .about-page .about-section-3 {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  padding: 80px;
+  margin: 0px auto;
+}
+body .about-page .about-section-3 h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+body .about-page .about-section-3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+body .about-page .about-section-3 ul li {
+  width: 30%;
+}
+body .about-page .about-section-3 ul li img {
+  width: 100%;
+}
+body .about-page .about-section-3 ul li h2 {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 20px 0px;
+}
+body .about-page .about-section-3 ul li p {
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.5;
+}
+body .about-page .about-section-4 {
+  padding: 80px;
+}
+body .about-page .about-section-4 h1 {
+  text-align: center;
+  padding: 30px;
+  font-weight: 700;
+  font-size: 48px;
+}
+body .about-page .about-section-4 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+body .about-page .about-section-4 ul li {
+  display: flex;
+  justify-content: space-between;
+}
+body .about-page .about-section-4 ul li h2 {
+  flex-basis: 30%;
+  font-weight: 700;
+  font-size: 40px;
+}
+body .about-page .about-section-4 ul li .wrapper {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .about-page .about-section-4 ul li .wrapper .card {
+  background-color: #F2F5F9;
+  padding: 10px;
+  border-radius: 10px;
+}
+body .about-page .about-section-4 ul li .wrapper .card div {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer {
+  color: white;
+}
+body footer .line {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #495567;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/footer-img/bacground.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+body footer .line h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+body footer nav {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 30px 80px;
+  background-color: #323943;
+  color: #596475;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body footer nav ul li:hover {
+  color: #FCB72B;
+  cursor: pointer;
+}
+body footer nav ul i {
+  font-size: 32px;
+  color: #FCB72B;
+}
+body footer nav ul i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  body .btn-style {
+    padding: 10px 20px;
+  }
+  body header nav {
+    padding: 30px;
+  }
+  body header nav ul {
+    width: 100%;
+    gap: 15px;
+    justify-content: space-around;
+  }
+  body .about-page .title {
+    padding: 50px 80px;
+  }
+  body .about-page .about-section-1 {
+    text-align: center;
+    background-position: right;
+  }
+  body .about-page .about-section-1 .wrapper {
+    padding: 50px 30px;
+    flex-direction: column-reverse;
+  }
+  body .about-page .about-section-1 .wrapper .info h1 {
+    font-size: 32px;
+  }
+  body .about-page .about-section-2 .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  body .about-page .about-section-3 {
+    padding: 30px;
+  }
+  body .about-page .about-section-3 ul {
+    flex-direction: column;
+  }
+  body .about-page .about-section-3 ul li {
+    width: 50%;
+  }
+  body .about-page .about-section-4 {
+    padding: 30px;
+  }
+  body .about-page .about-section-4 ul li {
+    flex-direction: column;
+    gap: 30px;
+  }
+  body .about-page .about-section-4 ul li h2 {
+    text-align: center;
+  }
+  body footer .line {
+    padding: 30px;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  body footer .line h1 br {
+    display: none;
+  }
+  body footer nav {
+    padding: 30px;
+  }
+  body footer nav ul i {
+    color: #FCB72B;
+  }
+}
+@media (max-width: 600px) {
+  header nav ul .icon {
+    display: block;
+  }
+  header nav ul li {
+    display: none;
+  }
+  header nav button {
+    display: none;
+  }
+  .about-page .title {
+    background-image: url(/about-page/title-img/mobile-background.png);
+  }
+  .about-page .title .img-2 {
+    display: none;
+  }
+  .about-page .title .img-1 {
+    margin: 0px auto;
+  }
+  .about-page .about-section-1 {
+    background-image: none;
+    padding: 10px;
+  }
+  .about-page .about-section-1 .img-1 {
+    width: 100%;
+  }
+  .about-page .about-section-2 {
+    background-image: none;
+    padding: 10px;
+  }
+  .about-page .about-section-2 .wrapper h1 {
+    font-size: 32px !important;
+  }
+  .about-page .about-section-3 {
+    padding: 10px;
+  }
+  .about-page .about-section-3 h1 {
+    font-size: 32px !important;
+  }
+  .about-page .about-section-3 ul li {
+    width: 100% !important;
+  }
+  .about-page .about-section-4 {
+    padding: 10px;
+  }
+  .about-page .about-section-4 h1 {
+    font-size: 32px !important;
+  }
+  .about-page .about-section-4 ul li h2 {
+    font-size: 24px !important;
+  }
+  .about-page .about-section-4 ul li .wrapper h3 {
+    font-size: 18px !important;
+  }
+  .about-page .about-section-4 ul li .wrapper p {
+    font-size: 15px !important;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .line h1 {
+    font-size: 32px !important;
+  }
+  footer nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer nav .ul-1 {
+    flex-direction: column;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=about.css.map */

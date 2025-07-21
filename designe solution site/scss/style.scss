@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    nav {
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            background-color: #755CDE;
+            padding: 15px 20px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+        }
+    }
+
+    .s-1 {
+        text-align: center;
+        padding: 20px 100px;
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+        }
+
+        p {
+            width: 700px;
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            li {
+                width: 350px;
+                position: relative;
+                color: white;
+                border-radius: 10px;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            .li-1 {
+                background-color: #745BDB;
+                padding: 20px;
+
+                img {
+                    width: 128px;
+                    height: 192px;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+
+                h3 {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                }
+            }
+
+            .li-2 {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: space-between;
+
+                div {
+                    border-radius: 10px;
+                    position: relative;
+                    height: 182px;
+
+                    img {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                    }
+
+                    h3 {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                    }
+                }
+
+                .div-1 {
+                    background-color: #F6A560;
+                    width: 45%;
+                }
+
+                .div-2 {
+                    width: 45%;
+                    background-color: #F39E9E;
+                }
+
+                .div-3 {
+                    width: 100%;
+                    height: 158px;
+                    background-color: #EB7565;
+                }
+            }
+
+            .li-3 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                div {
+                    height: 175px;
+                    border-radius: 10px;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                    }
+
+                    h3 {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                    }
+                }
+
+                .div-1 {
+                    background-color: #61C4B7;
+                }
+
+                .div-2 {
+                    background-color: #552049;
+                }
+
+            }
+
+        }
+    }
+
+    .s-2 {
+        padding: 60px 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 50px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            button {
+                background-color: #EB7565;
+                color: white;
+                padding: 15px 0;
+                width: 200px;
+                font-size: 15px;
+                border: none;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .s-3 {
+        text-align: center;
+        padding: 100px 0;
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            padding-bottom: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .images {
+
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+
+            // img {
+            //     width: %;
+            // }
+        }
+    }
+}

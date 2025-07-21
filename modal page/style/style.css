@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "DM Sans", serif;
+}
+
+/* HEADER STYLES */
+header {
+    margin: auto;
+}
+
+header nav {
+    border-bottom: #486284 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 0px 20px;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header nav ul button,
+main .page-1 button {
+    background-color: #486284;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+}
+
+/* MAIN STYLES */
+main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #486284;
+    height: 88vh;
+    border: red solid 1px;
+}
+
+main .page-1 {
+    display: none;
+    margin: 80px auto 0px;
+    width: 60%;
+}
+
+main .page-1 h4 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+main .page-1 h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+main .page-1 p {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+    padding: 15px 0px;
+}
+
+main .page-1 button {
+    margin: 10px
+}
+
+main .page-1 .btn-2 {
+    background-color: transparent;
+    color: #486284;
+    border: #486284 solid 1px;
+}
+
+main .page-1 h3 {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+main .page-1 .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+
+/* CARD STYLES */
+main .card {
+    width: 400px;
+    height: 180px;
+    margin: 0px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.281);
+    text-align: start;
+}
+
+main .card h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main .card p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 30px 0px;
+}
+
+main .card label button {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: #1C3177;
+    background-color: #1C3177;
+}
+
+main .card label .btn-1 {
+    background-color: transparent;
+    color: #FE96C8;
+    border: #FE96C8 solid 2px;
+}

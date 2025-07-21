@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  background-color: #EDF3F8;
+}
+body nav {
+  background-color: transparent;
+}
+body nav ul li {
+  margin: 0rem 2rem;
+  list-style-type: none;
+}
+body .s1 {
+  height: 100vh;
+}
+body .s1 .b1 h1 {
+  width: 20rem;
+  gap: -1px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 72px;
+}
+body .s1 .b1 label input {
+  border-radius: 1rem;
+  padding: 5px;
+  border: none;
+}
+body .s1 .b1 label button {
+  transform: translate(-50px, 0px);
+}
+body .s1 .b2 {
+  background-image: url(/images/Bitmap.png);
+  background-size: cover;
+}
+body .s2 {
+  background-image: url(/images/Bitmap\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem;
+}
+body .s2 .b1 button {
+  background-image: transparent;
+}
+body .s3 .b1 img {
+  width: 400px;
+}
+body .s3 .b2 h1 {
+  color: #35526A;
+  font-family: Playfair Display;
+  font-size: 50px;
+}
+body .s4 {
+  padding: 5rem;
+  color: #35526A;
+  background-image: url(/images/Bitmap\ Copy\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+body .s5 {
+  color: #35526A;
+}
+body .s5 img {
+  width: 5rem;
+}
+body .s6 {
+  width: 80%;
+}
+body .s6 h2 {
+  font-family: Playfair Display;
+}
+body .s6 label input {
+  border-radius: 1rem;
+  padding: 5px;
+  border: none;
+}
+body .s6 label button {
+  transform: translate(-50px, 0px);
+}/*# sourceMappingURL=style.css.map */

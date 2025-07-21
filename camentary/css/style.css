@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+body .container {
+  width: 70%;
+  margin: 0 auto;
+  border: #fff solid 2px;
+  border-radius: 15px;
+  min-height: 98vh;
+  position: relative;
+  display: flex;
+}
+body .container .comment-wrap {
+  width: 100%;
+  height: 87.8vh;
+  padding: 2px;
+  color: white;
+}
+body .container .comment-wrap .comment {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+body .container .comment-wrap .comment .reaction {
+  font-size: 25px;
+  height: 100px;
+  font-weight: 600;
+  background-color: #E3E4E7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+body .container .comment-wrap .comment .reaction p {
+  color: #C5C6EF;
+  cursor: pointer;
+}
+body .container .comment-wrap .comment .content {
+  padding: 10px;
+}
+body .container .comment-wrap .comment .content .info {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .comment-wrap .comment .content .info div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}
+body .container .comment-wrap .comment .content .info div img {
+  cursor: pointer;
+}
+body .container .comment-wrap .comment .content .info div h2 {
+  color: #334253;
+  font-weight: 500;
+  cursor: pointer;
+}
+body .container .comment-wrap .comment .content .info div p {
+  cursor: pointer;
+  color: #67727E;
+}
+body .container .comment-wrap .comment .content .info h3 {
+  color: #5357B6;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+body .container .comment-wrap .comment .content .info h3 i {
+  color: #5357B6;
+}
+body .container .comment-wrap .comment .content .text {
+  height: 100px;
+  overflow-y: scroll;
+}
+body .container .add-comment-wrap {
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+body .container .add-comment-wrap img {
+  border-radius: 50%;
+}
+body .container .add-comment-wrap input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.292) solid 2px;
+}
+body .container .add-comment-wrap button {
+  padding: 10px 30px;
+  background-color: #5357B6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

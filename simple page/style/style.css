@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+body .container {
+  width: 70%;
+  display: flex;
+  color: white;
+  padding: 0px;
+}
+body .container .box1 {
+  background-color: #E28625;
+}
+body .container .box1 .btn {
+  color: #E28625;
+}
+body .container .box2 {
+  background-color: #00656D;
+}
+body .container .box2 .btn {
+  color: #00656D;
+}
+body .container .box3 {
+  background-color: #004140;
+}
+body .container .box3 .btn {
+  color: #004140;
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+  body .container {
+    flex-direction: column;
+  }
+  body .container .box1 {
+    padding: 100px 0px;
+  }
+  body .container .box1 h1 {
+    padding: 5rem 0rem;
+    color: red;
+  }
+  body .container .box2 {
+    padding: 100px 0px;
+  }
+  body .container .box3 {
+    padding: 100px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

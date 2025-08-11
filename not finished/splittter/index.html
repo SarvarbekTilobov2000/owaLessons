@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/style.css">
+    <title>Test</title>
+</head> 
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="left-panel">
+                <label for="bill">Bill</label>
+                <input type="number" id="bill-inp" placeholder="$">
+
+                <p>Select Tip %</p>
+                <div class="tip-options">
+                    <button class="tip-btn">5%</button>
+                    <button class="tip-btn">10%</button>
+                    <button class="tip-btn ">15%</button>
+                    <button class="tip-btn">25%</button>
+                    <button class="tip-btn">50%</button>
+                    <input type="number" class="custom-tip" placeholder="Custom">
+                </div>
+
+                <label for="people">Number of People</label>
+                <div class="people-input">
+                    <span class="icon">👤</span>
+                    <input type="number" id="people">
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="result">
+                    <div class="result-row">
+                        <div class="label">
+                            <p>Tip Amount</p>
+                            <span>/ person</span>
+                        </div>
+                        <h2 id="amount">$4.27</h2>
+                    </div>
+
+                    <div class="result-row">
+                        <div class="label">
+                            <p>Total</p>
+                            <span>/ person</span>
+                        </div>
+                        <h2 id="total">$32.79</h2>
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button class="reset-btn">RESET</button>
+                    <button class="confirm-btn">CONFIRM</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js-0/script.js"></script>
+</body>
+
+</html>

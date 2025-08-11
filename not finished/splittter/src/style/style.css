@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.inp-error {
+  border: red solid 2px !important;
+}
+
+body {
+  background-color: #c0e7ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+body .container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+body .container .calculator {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+body .container .calculator .left-panel {
+  flex: 1;
+}
+body .container .calculator .left-panel label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+body .container .calculator .left-panel #bill-inp {
+  border: transparent solid 2px;
+}
+body .container .calculator .left-panel input[type=number],
+body .container .calculator .left-panel .custom-tip {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #f2fafa;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: right;
+}
+body .container .calculator .left-panel p {
+  color: #5E7A7D;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  letter-spacing: 2px;
+}
+body .container .calculator .left-panel .tip-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  border: transparent 2px solid;
+  border-radius: 10px;
+}
+body .container .calculator .left-panel .tip-options .tip-btn {
+  height: 50px;
+  background-color: #00474B;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+body .container .calculator .left-panel .tip-options .tip-btn:hover,
+body .container .calculator .left-panel .tip-options .tip-btn.selected {
+  background-color: #26c0ab;
+}
+body .container .calculator .left-panel .tip-options .custom-tip {
+  text-align: center;
+}
+body .container .calculator .left-panel .people-input {
+  position: relative;
+  border: transparent solid 2px;
+  border-radius: 5px;
+}
+body .container .calculator .left-panel .people-input .icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+  color: gray;
+}
+body .container .calculator .left-panel .people-input input {
+  padding-left: 30px;
+}
+body .container .calculator .right-panel {
+  flex: 1;
+  background-color: #00474B;
+  border-radius: 16px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .container .calculator .right-panel .result {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .container .calculator .right-panel .result .result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .calculator .right-panel .result .result-row .label p {
+  font-weight: bold;
+}
+body .container .calculator .right-panel .result .result-row .label span {
+  font-size: 0.8rem;
+  color: #7f9d9f;
+}
+body .container .calculator .right-panel .result .result-row h2 {
+  font-size: 2rem;
+  color: #26c0ab;
+}
+body .container .calculator .right-panel .btn-wrap .reset-btn {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #26c0ab;
+  border: none;
+  color: #00474B;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+body .container .calculator .right-panel .btn-wrap .reset-btn:hover {
+  background-color: #9fe8df;
+}
+body .container .calculator .right-panel .btn-wrap .confirm-btn {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #0f7668;
+  border: none;
+  color: #8bf0f6;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+body .container .calculator .right-panel .btn-wrap .confirm-btn:hover {
+  background-color: #12bea7;
+}/*# sourceMappingURL=style.css.map */

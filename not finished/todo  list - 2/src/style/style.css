@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.night_body {
+  background-color: #000B16;
+  color: white;
+}
+.night_body .note li {
+  border-bottom: white 2px solid;
+}
+
+body {
+  width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: url(/src/img/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #FAFAFA;
+  padding: 0 0 15px 0;
+}
+body .hide {
+  display: none;
+}
+body .show {
+  display: block;
+}
+body img {
+  margin: 0 auto;
+  width: 200px;
+}
+body .nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .nav h1 {
+  color: white;
+}
+body .nav i {
+  padding: 10px 15px;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+}
+body .modal {
+  padding-top: 50px;
+}
+body .modal .addTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+body .modal .addTodo .checkbox_div {
+  width: 20px;
+  height: 20px;
+  border: rgba(0, 0, 0, 0.406) 1px solid;
+  display: inline-block;
+  border-radius: 50%;
+}
+body .modal .addTodo input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
+body .modal .wrap {
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.192);
+}
+body .modal .wrap nav {
+  display: flex;
+  color: #000;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+  opacity: 0.5;
+}
+body .modal .wrap nav div {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 4px;
+}
+body .modal .wrap nav p {
+  padding: 4px;
+}
+body .modal .wrap nav p:hover {
+  cursor: pointer;
+}
+body .modal .wrap nav div:hover {
+  cursor: pointer;
+}
+body ul {
+  text-align: start;
+  list-style-type: none;
+  padding: 0 10px;
+}
+body ul li {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: rgba(0, 0, 0, 0.258) 2px solid;
+}
+body ul li label input {
+  width: 14px;
+  height: 14px;
+  margin-right: 15px;
+}/*# sourceMappingURL=style.css.map */

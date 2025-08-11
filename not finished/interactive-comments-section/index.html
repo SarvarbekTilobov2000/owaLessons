@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive-comment-section</title>
+    <!--moment.js kutubxonasini 2.30.1-versiyasini cdn yo'l bilan yuklab olinyapdi-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <link rel="web site icon" href="./src/assets/icon/reply.svg" />
+    <link rel="stylesheet" href="./src/styles/css/app.css" />
+</head>
+
+<body>
+    <section id="interactive-comments-section">
+        <div class="container">
+            <div class="rating-cards">
+                <div class="card">
+                    <div class="card__feedback-controls">
+                        <button class="like-btn">
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="plus">
+                                <path
+                                    d="M6.38896 10.8919C6.52552 10.8919 6.64346 10.8422 6.74277 10.7429C6.84209 10.6436 6.89175 10.5256 6.89175 10.3891V6.99988H10.2065C10.343 6.99988 10.461 6.95022 10.5603 6.85091C10.6596 6.75159 10.7093 6.63365 10.7093 6.49709V5.26804C10.7093 5.13148 10.6596 5.01354 10.5603 4.91422C10.461 4.81491 10.343 4.76525 10.2065 4.76525H6.89175V1.39467C6.89175 1.25811 6.84209 1.14017 6.74277 1.04085C6.64346 0.941535 6.52552 0.891876 6.38896 0.891876H4.97369C4.83712 0.891876 4.71919 0.941535 4.61987 1.04085C4.52055 1.14017 4.47089 1.25811 4.47089 1.39467V4.76525H1.13756C1.001 4.76525 0.883059 4.81491 0.783741 4.91422C0.684424 5.01354 0.634766 5.13148 0.634766 5.26804V6.49709C0.634766 6.63365 0.684424 6.75159 0.783741 6.85091C0.883059 6.95022 1.001 6.99988 1.13756 6.99988H4.47089V10.3891C4.47089 10.5256 4.52055 10.6436 4.61987 10.7429C4.71919 10.8422 4.83712 10.8919 4.97369 10.8919H6.38896Z"
+                                    fill="#C5C6EF" />
+                            </svg>
+                        </button>
+
+                        <span>12</span>
+
+                        <button class="dislike-btn">
+                            <svg width="11" height="3" viewBox="0 0 11 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="minus">
+                                <path
+                                    d="M9.31468 2.65588C9.51895 2.65588 9.69537 2.60033 9.84393 2.48922C9.99249 2.37811 10.0668 2.24616 10.0668 2.09338V0.718384C10.0668 0.565606 9.99249 0.433662 9.84393 0.32255C9.69537 0.211439 9.51895 0.155884 9.31468 0.155884H0.818862C0.61459 0.155884 0.438175 0.211439 0.289614 0.32255C0.141053 0.433662 0.0667725 0.565606 0.0667725 0.718384V2.09338C0.0667725 2.24616 0.141053 2.37811 0.289614 2.48922C0.438175 2.60033 0.61459 2.65588 0.818862 2.65588H9.31468Z"
+                                    fill="#C5C6EF" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment__header">
+                            <div class="comment__username">
+                                <img src="./src/assets/images/avatar.png" alt="mo photo" />
+                                <div class="box">
+                                    <h4>amyrobson</h4>
+                                    <div class="me">You</div>
+                                </div>
+                                <span>1 month ago</span>
+                            </div>
+
+                            <div class="comment-controls">
+                                <button class="delete-btn">
+                                    <img src="./src/assets/icon/delete.svg" alt="delete icon" />
+                                    Delete
+                                </button>
+                                <button class="edit-btn">
+                                    <img src="./src/assets/icon/edit.svg" alt="edit icon" />
+                                    Edit
+                                </button>
+                                <button class="reply-btn">
+                                    <img src="./src/assets/icon/reply.svg" alt="reply icon" />
+                                    Reply
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="comment__text">
+                            <p>
+                                Impressive! Though it seems the drag feature could be improved. But overall it looks
+                                incredible. You’ve nailed the design and the responsiveness at various breakpoints
+                                works really well.
+                            </p>
+
+                            <div class="editable">
+                                <textarea placeholder="Add a comment" class="comment-editable__textarea"></textarea>
+                                <button class="comment-editable__btn">update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reply-editor">
+                    <img src="./src/assets/images/avatar.png" alt="no photo" />
+                    <textarea class="reply-editor__textarea" placeholder="Add a comment..."></textarea>
+                    <button class="reply-editor__submit-btn" type='button'>REPLY</button>
+                </div>
+
+                <div class="card edit">
+                    <div class="card__feedback-controls">
+                        <button class="like-btn">
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="plus">
+                                <path
+                                    d="M6.38896 10.8919C6.52552 10.8919 6.64346 10.8422 6.74277 10.7429C6.84209 10.6436 6.89175 10.5256 6.89175 10.3891V6.99988H10.2065C10.343 6.99988 10.461 6.95022 10.5603 6.85091C10.6596 6.75159 10.7093 6.63365 10.7093 6.49709V5.26804C10.7093 5.13148 10.6596 5.01354 10.5603 4.91422C10.461 4.81491 10.343 4.76525 10.2065 4.76525H6.89175V1.39467C6.89175 1.25811 6.84209 1.14017 6.74277 1.04085C6.64346 0.941535 6.52552 0.891876 6.38896 0.891876H4.97369C4.83712 0.891876 4.71919 0.941535 4.61987 1.04085C4.52055 1.14017 4.47089 1.25811 4.47089 1.39467V4.76525H1.13756C1.001 4.76525 0.883059 4.81491 0.783741 4.91422C0.684424 5.01354 0.634766 5.13148 0.634766 5.26804V6.49709C0.634766 6.63365 0.684424 6.75159 0.783741 6.85091C0.883059 6.95022 1.001 6.99988 1.13756 6.99988H4.47089V10.3891C4.47089 10.5256 4.52055 10.6436 4.61987 10.7429C4.71919 10.8422 4.83712 10.8919 4.97369 10.8919H6.38896Z"
+                                    fill="#C5C6EF" />
+                            </svg>
+                        </button>
+
+                        <span>12</span>
+
+                        <button class="dislike-btn">
+                            <svg width="11" height="3" viewBox="0 0 11 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="minus">
+                                <path
+                                    d="M9.31468 2.65588C9.51895 2.65588 9.69537 2.60033 9.84393 2.48922C9.99249 2.37811 10.0668 2.24616 10.0668 2.09338V0.718384C10.0668 0.565606 9.99249 0.433662 9.84393 0.32255C9.69537 0.211439 9.51895 0.155884 9.31468 0.155884H0.818862C0.61459 0.155884 0.438175 0.211439 0.289614 0.32255C0.141053 0.433662 0.0667725 0.565606 0.0667725 0.718384V2.09338C0.0667725 2.24616 0.141053 2.37811 0.289614 2.48922C0.438175 2.60033 0.61459 2.65588 0.818862 2.65588H9.31468Z"
+                                    fill="#C5C6EF" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment__header">
+                            <div class="comment__username">
+                                <img src="./src/assets/images/avatar.png" alt="mo photo" />
+                                <div class="box">
+                                    <h4>amyrobson</h4>
+                                    <div class="me">You</div>
+                                </div>
+                                <span>1 month ago</span>
+                            </div>
+                            <div class="comment-controls">
+                                <button class="delete-btn">
+                                    <img src="./src/assets/icon/delete.svg" alt="delete icon" />
+                                    Delete
+                                </button>
+                                <button class="edit-btn">
+                                    <img src="./src/assets/icon/edit.svg" alt="edit icon" />
+                                    Edit
+                                </button>
+                                <button class="reply-btn">
+                                    <img src="./src/assets/icon/reply.svg" alt="reply icon" />
+                                    Reply
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="comment__text">
+                            <p>
+                                Impressive! Though it seems the drag feature could be improved. But overall it looks
+                                incredible. You’ve nailed the design and the responsiveness at various breakpoints
+                                works really well.
+                            </p>
+                            <div class="editable">
+                                <textarea placeholder="Add a comment" class="comment-editable__textarea"></textarea>
+                                <button class="comment-editable__btn">update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="replying-cards">
+                    <div class="wrapper">
+                        <div class="reply-card card">
+                            <div class="card__feedback-controls">
+                                <button class="like-btn">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="plus">
+                                        <path
+                                            d="M6.38896 10.8919C6.52552 10.8919 6.64346 10.8422 6.74277 10.7429C6.84209 10.6436 6.89175 10.5256 6.89175 10.3891V6.99988H10.2065C10.343 6.99988 10.461 6.95022 10.5603 6.85091C10.6596 6.75159 10.7093 6.63365 10.7093 6.49709V5.26804C10.7093 5.13148 10.6596 5.01354 10.5603 4.91422C10.461 4.81491 10.343 4.76525 10.2065 4.76525H6.89175V1.39467C6.89175 1.25811 6.84209 1.14017 6.74277 1.04085C6.64346 0.941535 6.52552 0.891876 6.38896 0.891876H4.97369C4.83712 0.891876 4.71919 0.941535 4.61987 1.04085C4.52055 1.14017 4.47089 1.25811 4.47089 1.39467V4.76525H1.13756C1.001 4.76525 0.883059 4.81491 0.783741 4.91422C0.684424 5.01354 0.634766 5.13148 0.634766 5.26804V6.49709C0.634766 6.63365 0.684424 6.75159 0.783741 6.85091C0.883059 6.95022 1.001 6.99988 1.13756 6.99988H4.47089V10.3891C4.47089 10.5256 4.52055 10.6436 4.61987 10.7429C4.71919 10.8422 4.83712 10.8919 4.97369 10.8919H6.38896Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+
+                                <span>12</span>
+
+                                <button class="dislike-btn">
+                                    <svg width="11" height="3" viewBox="0 0 11 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="minus">
+                                        <path
+                                            d="M9.31468 2.65588C9.51895 2.65588 9.69537 2.60033 9.84393 2.48922C9.99249 2.37811 10.0668 2.24616 10.0668 2.09338V0.718384C10.0668 0.565606 9.99249 0.433662 9.84393 0.32255C9.69537 0.211439 9.51895 0.155884 9.31468 0.155884H0.818862C0.61459 0.155884 0.438175 0.211439 0.289614 0.32255C0.141053 0.433662 0.0667725 0.565606 0.0667725 0.718384V2.09338C0.0667725 2.24616 0.141053 2.37811 0.289614 2.48922C0.438175 2.60033 0.61459 2.65588 0.818862 2.65588H9.31468Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment__header">
+                                    <div class="comment__username">
+                                        <img src="./src/assets/images/avatar.png" alt="mo photo" />
+
+                                        <div class="box">
+                                            <h4>amyrobson</h4>
+                                            <div class="me">You</div>
+                                        </div>
+
+                                        <span>1 month ago</span>
+                                    </div>
+
+                                    <div class="comment-controls">
+                                        <button class="delete-btn">
+                                            <img src="./src/assets/icon/delete.svg" alt="delete icon" />
+                                            Delete
+                                        </button>
+                                        <button class="edit-btn">
+                                            <img src="./src/assets/icon/edit.svg" alt="edit icon" />
+                                            Edit
+                                        </button>
+                                        <button class="reply-btn">
+                                            <img src="./src/assets/icon/reply.svg" alt="reply icon" />
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="comment__text">
+                                    <p>
+                                        Impressive! Though it seems the drag feature could be improved. But overall
+                                        it looks incredible. You’ve nailed the design and the responsiveness at
+                                        various breakpoints works really well.
+                                    </p>
+
+                                    <div class="editable">
+                                        <textarea placeholder="Add a comment"
+                                            class="comment-editable__textarea"></textarea>
+                                        <button class="comment-editable__btn">update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bu reply tugmasi bosilgan ui ga ko'rinadigan reply-editor card | reply-->
+                        <div class="reply-editor">
+                            <img src="./src/assets/images/avatar.png" alt="no photo" />
+                            <textarea class="reply-editor__textarea" placeholder="Add a comment..."></textarea>
+                            <button class="reply-editor__submit-btn">REPLY</button>
+                        </div>
+
+                        <!--"own comment" classi qo'shilgan card, sizning cardingiz bo'ladi ya'ni sizga tegish comment bo'ladi | you-->
+                        <div class="reply-card card own-comment">
+                            <div class="card__feedback-controls">
+                                <button class="like-btn">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="plus">
+                                        <path
+                                            d="M6.38896 10.8919C6.52552 10.8919 6.64346 10.8422 6.74277 10.7429C6.84209 10.6436 6.89175 10.5256 6.89175 10.3891V6.99988H10.2065C10.343 6.99988 10.461 6.95022 10.5603 6.85091C10.6596 6.75159 10.7093 6.63365 10.7093 6.49709V5.26804C10.7093 5.13148 10.6596 5.01354 10.5603 4.91422C10.461 4.81491 10.343 4.76525 10.2065 4.76525H6.89175V1.39467C6.89175 1.25811 6.84209 1.14017 6.74277 1.04085C6.64346 0.941535 6.52552 0.891876 6.38896 0.891876H4.97369C4.83712 0.891876 4.71919 0.941535 4.61987 1.04085C4.52055 1.14017 4.47089 1.25811 4.47089 1.39467V4.76525H1.13756C1.001 4.76525 0.883059 4.81491 0.783741 4.91422C0.684424 5.01354 0.634766 5.13148 0.634766 5.26804V6.49709C0.634766 6.63365 0.684424 6.75159 0.783741 6.85091C0.883059 6.95022 1.001 6.99988 1.13756 6.99988H4.47089V10.3891C4.47089 10.5256 4.52055 10.6436 4.61987 10.7429C4.71919 10.8422 4.83712 10.8919 4.97369 10.8919H6.38896Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+
+                                <span>12</span>
+
+                                <button class="dislike-btn">
+                                    <svg width="11" height="3" viewBox="0 0 11 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="minus">
+                                        <path
+                                            d="M9.31468 2.65588C9.51895 2.65588 9.69537 2.60033 9.84393 2.48922C9.99249 2.37811 10.0668 2.24616 10.0668 2.09338V0.718384C10.0668 0.565606 9.99249 0.433662 9.84393 0.32255C9.69537 0.211439 9.51895 0.155884 9.31468 0.155884H0.818862C0.61459 0.155884 0.438175 0.211439 0.289614 0.32255C0.141053 0.433662 0.0667725 0.565606 0.0667725 0.718384V2.09338C0.0667725 2.24616 0.141053 2.37811 0.289614 2.48922C0.438175 2.60033 0.61459 2.65588 0.818862 2.65588H9.31468Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment__header">
+                                    <div class="comment__username">
+                                        <img src="./src/assets/images/avatar.png" alt="mo photo" />
+
+                                        <div class="box">
+                                            <h4>amyrobson</h4>
+                                            <div class="me">You</div>
+                                        </div>
+
+                                        <span>1 month ago</span>
+                                    </div>
+
+                                    <div class="comment-controls">
+                                        <button class="delete-btn">
+                                            <img src="./src/assets/icon/delete.svg" alt="delete icon" />
+                                            Delete
+                                        </button>
+
+                                        <button class="edit-btn">
+                                            <img src="./src/assets/icon/edit.svg" alt="edit icon" />
+                                            Edit
+                                        </button>
+
+                                        <button class="reply-btn">
+                                            <img src="./src/assets/icon/reply.svg" alt="reply icon" />
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="comment__text">
+                                    <p>
+                                        Impressive! Though it seems the drag feature could be improved. But overall
+                                        it looks incredible. You’ve nailed the design and the responsiveness at
+                                        various breakpoints works really well.
+                                    </p>
+
+                                    <div class="editable">
+                                        <textarea placeholder="Add a comment"
+                                            class="comment-editable__textarea"></textarea>
+                                        <button class="comment-editable__btn">update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--"edit" classi cardga qo'shilsa, edit qilish uchun mo'ljallangan textarea va button paydo bo'ladi | edit-->
+                        <div class="reply-card card own-comment edit">
+                            <div class="card__feedback-controls">
+                                <button class="like-btn">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="plus">
+                                        <path
+                                            d="M6.38896 10.8919C6.52552 10.8919 6.64346 10.8422 6.74277 10.7429C6.84209 10.6436 6.89175 10.5256 6.89175 10.3891V6.99988H10.2065C10.343 6.99988 10.461 6.95022 10.5603 6.85091C10.6596 6.75159 10.7093 6.63365 10.7093 6.49709V5.26804C10.7093 5.13148 10.6596 5.01354 10.5603 4.91422C10.461 4.81491 10.343 4.76525 10.2065 4.76525H6.89175V1.39467C6.89175 1.25811 6.84209 1.14017 6.74277 1.04085C6.64346 0.941535 6.52552 0.891876 6.38896 0.891876H4.97369C4.83712 0.891876 4.71919 0.941535 4.61987 1.04085C4.52055 1.14017 4.47089 1.25811 4.47089 1.39467V4.76525H1.13756C1.001 4.76525 0.883059 4.81491 0.783741 4.91422C0.684424 5.01354 0.634766 5.13148 0.634766 5.26804V6.49709C0.634766 6.63365 0.684424 6.75159 0.783741 6.85091C0.883059 6.95022 1.001 6.99988 1.13756 6.99988H4.47089V10.3891C4.47089 10.5256 4.52055 10.6436 4.61987 10.7429C4.71919 10.8422 4.83712 10.8919 4.97369 10.8919H6.38896Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+
+                                <span>12</span>
+
+                                <button class="dislike-btn">
+                                    <svg width="11" height="3" viewBox="0 0 11 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="minus">
+                                        <path
+                                            d="M9.31468 2.65588C9.51895 2.65588 9.69537 2.60033 9.84393 2.48922C9.99249 2.37811 10.0668 2.24616 10.0668 2.09338V0.718384C10.0668 0.565606 9.99249 0.433662 9.84393 0.32255C9.69537 0.211439 9.51895 0.155884 9.31468 0.155884H0.818862C0.61459 0.155884 0.438175 0.211439 0.289614 0.32255C0.141053 0.433662 0.0667725 0.565606 0.0667725 0.718384V2.09338C0.0667725 2.24616 0.141053 2.37811 0.289614 2.48922C0.438175 2.60033 0.61459 2.65588 0.818862 2.65588H9.31468Z"
+                                            fill="#C5C6EF" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment__header">
+                                    <div class="comment__username">
+                                        <img src="./src/assets/images/avatar.png" alt="mo photo" />
+
+                                        <div class="box">
+                                            <h4>amyrobson</h4>
+                                            <div class="me">You</div>
+                                        </div>
+
+                                        <span>1 month ago</span>
+
+                                    </div>
+
+                                    <div class="comment-controls">
+                                        <button class="delete-btn">
+                                            <img src="./src/assets/icon/delete.svg" alt="delete icon" />
+                                            Delete
+                                        </button>
+                                        <button class="edit-btn">
+                                            <img src="./src/assets/icon/edit.svg" alt="edit icon" />
+                                            Edit
+                                        </button>
+                                        <button class="reply-btn">
+                                            <img src="./src/assets/icon/reply.svg" alt="reply icon" />
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="comment__text">
+                                    <p>
+                                        Impressive! Though it seems the drag feature could be improved. But overall
+                                        it looks incredible. You’ve nailed the design and the responsiveness at
+                                        various breakpoints works really well.
+                                    </p>
+
+                                    <div class="editable">
+                                        <textarea placeholder="Add a comment"
+                                            class="comment-editable__textarea"></textarea>
+                                        <button class="comment-editable__btn">update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="comment-form">
+                <img src="./src/assets/images/julius.png" alt="no photo" />
+                <textarea class="comment-form__textarea" placeholder="Add a comment…"></textarea>
+                <button class="comment-form__submit-btn" type="button">send</button>
+            </form>
+        </div>
+    </section>
+    <!--Modal html struktura | hide classi olib tashlansa modal ko'rinadi ui da-->
+    <div class="modal-backdrop hide">
+        <div class="confrim-modal">
+            <h1>Delete comment</h1>
+
+            <p>Are you sure you want to delete this comment? This will remove the comment and can’t be undone.</p>
+
+            <div class="modal__box">
+                <button class="cancel-btn">No, cancel</button>
+                <button class="ok-btn">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src/js/script.js"></script>
+
+</html>

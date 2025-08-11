@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+}
+body header {
+  width: 100%;
+  padding: 20px;
+  background-color: #373F68;
+  border-radius: 10px;
+  color: #fff;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body header nav div h1 {
+  font-weight: 800;
+}
+body header nav div h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+body header nav .add-feedback {
+  border: none;
+  border-radius: 10px;
+  background-color: #AD1FEA;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+body main .form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body main .form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+}
+body main .form-container .container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+}
+body main .form-container .container .comment-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .form-container .container .comment-wrap .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+body main .form-container .container .comment-wrap .card .vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1e293b;
+}
+body main .form-container .container .comment-wrap .card .vote .arrow {
+  color: #6366f1;
+  font-size: 1.2rem;
+}
+body main .form-container .container .comment-wrap .card .vote .count {
+  margin-top: 0.25rem;
+}
+body main .form-container .container .comment-wrap .card .content {
+  flex: 1;
+  margin: 0 1rem;
+}
+body main .form-container .container .comment-wrap .card .content .title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+body main .form-container .container .comment-wrap .card .content .desc {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0.25rem 0;
+}
+body main .form-container .container .comment-wrap .card .badge {
+  display: inline-block;
+  background-color: #eef2ff;
+  color: #6366f1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+body main .form-container .container .comment-wrap .comments {
+  display: flex;
+  align-items: center;
+  color: #475569;
+}
+body main .form-container .container .comment-wrap .comments .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+body main .form-container .container .comment-wrap .comments .comment-count {
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

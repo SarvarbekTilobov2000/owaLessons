@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+
+    input {
+        border: red solid 2px !important;
+    }
+
+    i {
+        display: block !important;
+    }
+}
+
+body {
+    width: 100%;
+    background-color: #F0F0F0;
+    font-family: "Poppins", sans-serif;
+
+    .card {
+        border-radius: 30px;
+        margin-top: 50px !important;
+        background-color: white;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+        .inputs {
+            display: flex;
+            gap: 30px;
+
+            label {
+                width: 190px;
+                height: 90px;
+
+                input {
+                    padding: 10px;
+                    width: 100px;
+                    border-radius: 10px;
+                    border: 2px solid black;
+                }
+
+                input:hover {
+                    cursor: pointer;
+                }
+
+                i {
+                    display: none;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .btn-wrap {
+            width: 100%;
+            position: relative;
+            height: 70px;
+
+            img {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                right: 0;
+                background-color: #854DFF;
+                padding: 10px;
+                border-radius: 50%;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+
+        .res-wrap {
+            width: 100%;
+
+            h1 {
+                font-size: 70px;
+                font-weight: 900;
+
+                span {
+                    color: #854DFF;
+                }
+            }
+        }
+
+    }
+}

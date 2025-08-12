@@ -6,10 +6,13 @@ let fonts = document.querySelectorAll('.font ul li')
 let inputs = document.querySelectorAll('.inputs input')
 let settingBtn = document.querySelector('.setting')
 let modal = document.querySelector('.set-wrapper')
-let crosBtn = document.querySelector('.cros')
 let modalWrapper = document.querySelector('.set-wrapper')
 let applyBtn = document.querySelector('.apply')
 let container = document.querySelector('.container')
+let PI = 2 * Math.PI * 90
+let TIME = 0.6 * 60
+let isRunning = false
+let timeInterval = null
 
 minutes.textContent = 25;
 seconds.textContent = '00'
@@ -28,7 +31,6 @@ fonts.forEach((item, ind, arr) => {
         if (ind == 0) container.style = `font-family: "Kumbh Sans", sans-serif;`
         if (ind = 1) container.style = `font-family: "Roboto Slab", serif;`
         if (ind = 2) container.style = `font-family: "Space Mono", monospace;`
-
     })
 })
 
@@ -43,9 +45,8 @@ colors.forEach((item, ind, arr) => {
     })
 })
 
-
 modalWrapper.addEventListener('click', (e) => {
-    if (e.target == crosBtn || e.target == modalWrapper) {
+    if (e.target.classList=='cros' || e.target == modalWrapper) {
         modal.classList.toggle('hide')
         inputs.forEach(i => { i.classList.remove('input-error'), i.value = '' })
     }

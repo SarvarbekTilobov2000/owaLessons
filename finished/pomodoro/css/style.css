@@ -72,7 +72,6 @@ body .container .round {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #161931;
 }
 body .container .round div {
   width: 180px;
@@ -84,6 +83,12 @@ body .container .round div {
 }
 body .container .round h1 {
   font-size: 50px;
+}
+body .container .round .start-btn {
+  padding: 5px;
+  cursor: pointer;
+  letter-spacing: 10px;
+  font-weight: 600;
 }
 body .container .set-wrapper {
   width: 100%;

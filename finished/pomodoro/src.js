@@ -8,14 +8,25 @@ let settingBtn = document.querySelector('.setting')
 let modal = document.querySelector('.set-wrapper')
 let modalWrapper = document.querySelector('.set-wrapper')
 let applyBtn = document.querySelector('.apply')
-let container = document.querySelector('.container')
 let PI = 2 * Math.PI * 90
-let TIME = 0.6 * 60
+let TIME = 0.1 * 60
 let isRunning = false
 let timeInterval = null
-
+let content = document.querySelector('.content')
 minutes.textContent = 25;
 seconds.textContent = '00'
+
+function formatTime(time) {
+    let minutes = Math.floor(time / 60).toString().padStart(2, '0')
+    let seconds = Math.floor(time % 60).toString().padStart(2, '0')
+    return `${minutes}:${seconds}`
+}
+function updateProgress() {
+
+}
+
+
+
 links.forEach((link) => {
     link.addEventListener('click', (e) => {
         links.forEach(i => i.classList.remove('active'))
@@ -26,11 +37,11 @@ links.forEach((link) => {
 fonts.forEach((item, ind, arr) => {
     item.addEventListener('click', (e) => {
         arr.forEach(i => i.classList.remove('active-font'))
-        item.classList.toggle('active-font')
+        item.classList.add('active-font')
 
-        if (ind == 0) container.style = `font-family: "Kumbh Sans", sans-serif;`
-        if (ind = 1) container.style = `font-family: "Roboto Slab", serif;`
-        if (ind = 2) container.style = `font-family: "Space Mono", monospace;`
+        if (ind == 0) document.body.style = `font-family: "Kumbh Sans", sans-serif;`
+        if (ind = 1) document.body.style = `font-family: "Roboto Slab", serif;`
+        if (ind = 2) document.body.style = `font-family: "Space Mono", monospace;`
     })
 })
 
@@ -46,7 +57,7 @@ colors.forEach((item, ind, arr) => {
 })
 
 modalWrapper.addEventListener('click', (e) => {
-    if (e.target.classList=='cros' || e.target == modalWrapper) {
+    if (e.target.classList == 'cros' || e.target == modalWrapper) {
         modal.classList.toggle('hide')
         inputs.forEach(i => { i.classList.remove('input-error'), i.value = '' })
     }
@@ -103,7 +114,7 @@ applyBtn.addEventListener('click', (e) => {
     // }, 1000);
 })
 
-
+formatTime(TIME)
 
 
 

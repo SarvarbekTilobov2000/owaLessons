@@ -1,6 +1,5 @@
 let lists = document.querySelectorAll('li')
 
-
 let c = 0
 for (let i = 0; i < lists.length; i++) {
     lists[i].addEventListener('click', (e) => {
@@ -12,7 +11,6 @@ for (let i = 0; i < lists.length; i++) {
             lists[i].children[0].style = `transform: rotate(180deg);`
         }
     })
-
 }
 
 

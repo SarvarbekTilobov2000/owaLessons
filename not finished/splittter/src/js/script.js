@@ -7,13 +7,13 @@ let total = document.querySelector('#total')
 let resetBtn = document.querySelector('.reset-btn')
 let confirmBtn = document.querySelector('.confirm-btn')
 let tipOptions = document.querySelector('.tip-options')
-let isValid = true
+let isValid = false
 
-tipBtns.forEach((i) => {
+tipBtns.forEach((i, _, arr) => {
     i.addEventListener('click', (e) => {
-        tipBtns.forEach((i) => {
+        arr.forEach((i) => {
             i.classList.remove('selected')
-
+            amountInterest = e.target
         })
         e.target.classList.add('selected')
     })
@@ -21,24 +21,22 @@ tipBtns.forEach((i) => {
 
 confirmBtn.addEventListener('click', (e) => {
     if (billInp.value.trim() == "") {
-        isValid = false
         billInp.classList.add('inp-error')
+        isValid = false
     } else {
-        isValid = true;
         billInp.classList.remove('inp-error')
+        isValid = true
     }
 
-    tipBtns.forEach((i) => {
-        if (!i.classList.contains('selected') || customTipInp.value.trim() == "") {
-            isValid = false
-
-            tipOptions.classList.add('inp-error')
-        } else {
-            isValid = false
-            tipOptions.classList.remove('inp-error')
-
-        }
-    })
+    let selected = [...tipBtns].some(item => item.classList.contains('selected'));
+    let customFilled = customTipInp.value !== ""
+    if (selected || customFilled) {
+        isValid = false
+        tipOptions.classList.remove('inp-error')
+    } else {
+        isValid = true
+        tipOptions.classList.add('inp-error')
+    }
 
     if (peopleInp.value.trim() == "") {
         isValid = false
@@ -46,9 +44,27 @@ confirmBtn.addEventListener('click', (e) => {
     } else {
         isValid = true;
         peopleInp.classList.remove('inp-error')
+    }
 
+    if (isValid) {
+        let a = [...tipBtns].filter((i) => { i.classList.cont       ains('selected')})
+        console.log(a);
+
+        amount.textContent = `$${(billInp.value / 100 * parseInt(customFilled.textContent)) / peopleInp.value}`
+
+        total.textContent = `$${billInp.value / peopleInp.value}`;
     }
 })
+
+resetBtn.addEventListener('click', () => {
+    document.body.querySelectorAll('input').forEach(e => e.value = '')
+    amount.textContent = '$ 0'
+    total.textContent = '$ 0'
+    tipBtns.forEach((i) => {
+        i.classList.remove('selected')
+    })
+})
+
 
 
 

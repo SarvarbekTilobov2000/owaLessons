@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+body div {
+  width: 100%;
+  height: 100vh;
+}
+body .box1 {
+  background-color: red;
+}
+body .box2 {
+  background-color: blue;
+}
+body .box3 {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

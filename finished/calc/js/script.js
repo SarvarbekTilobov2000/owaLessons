@@ -8,7 +8,9 @@ let slash = document.querySelector('.slash')
 let multip = document.querySelector('.multip')
 let reset = document.querySelector('.reset')
 let teng = document.querySelector('.teng')
-
+document.body.addEventListener('click', (e) => {
+    e.target == dot ?
+})
 
 function btnEvent() {
     numbers.forEach(i => {
@@ -50,9 +52,6 @@ function calc() {
     teng.addEventListener('click', () => {
         let exp = screen.textContent.trim();
 
-       
-
-
         if (exp.startsWith('*') || exp.startsWith('/')) {
             return;
         }
@@ -68,7 +67,6 @@ function calc() {
         }
     });
 }
-
 
 resetBtn()
 btnEvent()

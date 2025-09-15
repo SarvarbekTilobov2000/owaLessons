@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App — Kundalik Ishlaringizni Yaxshi Tashkil Qiling</title>
+    <link rel="stylesheet" href="./src/styles/css/app.css" />
+</head>
+
+<body>
+    <section id="todo-list-app">
+        <div class="container">
+            <div class="todo-app">
+                <header class="todo-app__header">
+                    <div class="todo-app__top-bar">
+                        <h1>Todo</h1>
+                        <button class="top-bar__btn">
+                            <img src="./src/assets/icons/moon.svg" alt="moon icon" />
+                        </button>
+                    </div>
+
+                    <form class="todo-form">
+                        <input type="text" name='text' placeholder="Create a new todo…"
+                            aria-label="Yangi vazifa kiriting" />
+                        <button class="todo-form__btn">Add</button>
+                    </form>
+                </header>
+
+                <div class="todo-app__body">
+                    <ul class="todo-list">
+                        
+                    </ul>
+
+                    <div class="todo-list__empty hide">
+                        Empty
+                    </div>
+
+                    <footer class="todo-app__footer">
+                        <span class="todo-footer__count">6 </span>
+                        <ul class="todo-footer__controls">
+                            <li>
+                                <button class="filter-btn filter-btn--active" data-type='all'>All</button>
+                            </li>
+                            <li>
+                                <button class="filter-btn" data-type='active'>Active</button>
+                            </li>
+                            <li>
+                                <button class="filter-btn" data-type='completed'>Completed</button>
+                            </li>
+                            <li>
+                                <button class="filter-btn" data-type='archive'>Archive</button>
+                            </li>
+                        </ul>
+                        <button class="todo-footer__clear-completed">Clear Completed</button>
+                    </footer>
+                </div>
+            </div>
+
+            <h4 class="todo-copyright">Drag and drop to reorder list</h4>
+        </div>
+    </section>
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>

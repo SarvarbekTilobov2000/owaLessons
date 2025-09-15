@@ -17,13 +17,15 @@ btns.forEach((i, ind) => {
         resBtns[1].setAttribute('src', btns[Math.floor(Math.random() * btns.length)].getAttribute('src'))
         let v0 = resBtns[0].getAttribute('src');
         let v1 = resBtns[1].getAttribute('src');
-        if (v0 == v1) resultCardH1.textContent = `DRAW`//  durrang
+        if (v0 == v1) {
+            resultCardH1.textContent = `DRAW`; score.textContent = Number(score.textContent) + 1
+        }//  durrang
         if (v0 == "src/img/paper.png" && v1 == "src/img/rock.png") resultCardH1.textContent = `YOU WIN`, score.textContent = Number(score.textContent) + 2
-        if (v0 == "src/img/paper.png" && v1 == "src/img/scissors.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent) + 1
-        if (v0 == "src/img/rock.png" && v1 == "src/img/paper.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent) + 1
+        if (v0 == "src/img/paper.png" && v1 == "src/img/scissors.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent)
+        if (v0 == "src/img/rock.png" && v1 == "src/img/paper.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent)
         if (v0 == "src/img/rock.png" && v1 == "src/img/scissors.png") resultCardH1.textContent = `YOU WIN`, score.textContent = Number(score.textContent) + 2
         if (v0 == "src/img/scissors.png" && v1 == "src/img/paper.png") resultCardH1.textContent = `YOU WIN`, score.textContent = Number(score.textContent) + 2
-        if (v0 == "src/img/scissors.png" && v1 == "src/img/rock.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent) + 1
+        if (v0 == "src/img/scissors.png" && v1 == "src/img/rock.png") resultCardH1.textContent = `YOU LOSE`, score.textContent = Number(score.textContent)
     })
 })
 

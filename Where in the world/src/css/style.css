@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.night_Mode {
+  background-color: #202C36;
+  color: white;
+  transition: all 0.3s ease;
+}
+.night_Mode header .header__top {
+  background-color: #2B3844;
+}
+.night_Mode header .header__bottom label {
+  background-color: #2B3844;
+}
+.night_Mode header .header__bottom label input {
+  color: #fff;
+}
+.night_Mode header .header__bottom label input::-moz-placeholder {
+  color: #fff;
+}
+.night_Mode header .header__bottom label input::placeholder {
+  color: #fff;
+}
+.night_Mode header .header__bottom .option .expand__btn {
+  background-color: #2B3844;
+  color: #fff;
+}
+.night_Mode header .header__bottom .option ul {
+  background-color: #2B3844;
+  color: #fff;
+}
+.night_Mode header .header__bottom .option i {
+  color: #fff;
+}
+.night_Mode main .container .card {
+  background-color: #2B3844;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.4s ease;
+}
+body header .header__top,
+body header .header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .header__top {
+  padding-bottom: 10px;
+  padding: 10px 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.142);
+}
+body header .header__top div {
+  display: flex;
+  align-items: center;
+}
+body header .header__top div .night__btn {
+  padding: 10px;
+  cursor: pointer;
+}
+body header .header__top div p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+body header .header__bottom {
+  align-items: start;
+  height: 100px;
+  padding: 20px 50px;
+}
+body header .header__bottom label {
+  width: 480px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.142);
+}
+body header .header__bottom label i {
+  width: 18px;
+  height: 18px;
+}
+body header .header__bottom label input {
+  border: none;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: transparent;
+  padding: 5px;
+}
+body header .header__bottom .option {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+body header .header__bottom .option .expand__btn {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.142);
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #fff;
+  padding: 15px;
+}
+body header .header__bottom .option .expand__btn i {
+  padding: 0 10px 0 70px;
+}
+body header .header__bottom .option ul {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.142);
+  border-radius: 5px;
+  background-color: #fff;
+  visibility: hidden;
+  color: black;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+body header .header__bottom .option ul.active {
+  opacity: 1;
+  visibility: visible;
+}
+body header .header__bottom .option ul p {
+  cursor: pointer;
+  padding: 2px;
+  padding: 6px 10px;
+}
+body main .container,
+body main .container__2 {
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+body main .container .card,
+body main .container__2 .card {
+  width: 264px;
+  padding-bottom: 20px;
+}
+body main .container .card img,
+body main .container__2 .card img {
+  width: 100%;
+  height: 160px;
+}
+body main .container .card h1,
+body main .container__2 .card h1 {
+  padding: 5px 20px;
+  font-weight: 800;
+  font-size: 18px;
+}
+body main .container .card b,
+body main .container__2 .card b {
+  font-size: 14px;
+  padding: 0 20px;
+  display: block;
+}
+body main .container .card b span,
+body main .container__2 .card b span {
+  display: inline-block;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */

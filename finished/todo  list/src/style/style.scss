@@ -7,11 +7,27 @@
 .night_body {
     background-color: #000B16;
     color: white;
+
     .note {
         li {
             border-bottom: white 2px solid;
         }
     }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+
+.active_btn {
+    background-color: rgba(52, 52, 173, 0.705);
+
 }
 
 body {
@@ -20,17 +36,12 @@ body {
     font-family: sans-serif;
     min-height: 100vh;
     padding: 0 0 15px 0;
-
-    .hide {
-        display: none;
-    }
-
-    .show {
-        display: block;
-    }
+    background-image: url(/src/img/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
     .note {
-        width: 500px;
+        width: 550px;
         margin: 0px auto;
         position: relative;
         top: 20px;
@@ -39,6 +50,12 @@ body {
 
         h1 {
             text-align: center;
+        }
+
+        img {
+            width: 85%;
+            margin: 0 auto;
+            transform: scale(0.7);
         }
 
         ul {
@@ -52,11 +69,23 @@ body {
                 border-bottom: rgba(0, 0, 0, 0.258) 2px solid;
 
                 label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
-                    input {
-                        width: 14px;
-                        height: 14px;
-                        margin-right: 15px;
+                    div {
+
+                        input {
+                            width: 14px;
+                            height: 14px;
+                            margin-right: 15px;
+                        }
+                    }
+
+                    .crosBtn {
+                        padding: 5px 10px;
+                        border: 1px solid black;
+                        border-radius: 10px;
                     }
                 }
             }
@@ -74,6 +103,10 @@ body {
             border-radius: 50%;
 
         }
+
+        .btn1:hover {
+            cursor: pointer;
+        }
     }
 
     .nav {
@@ -82,20 +115,23 @@ body {
         align-items: center;
         justify-content: space-between;
 
-
         input {
             padding: 10px;
             border: blue 2px solid;
             border-radius: 5px;
-            flex-basis: 70%;
         }
 
         button {
-            padding: 10px 20px;
+            padding: 10px;
             background-color: blue;
             border-radius: 5px;
             border: none;
             color: white;
+        }
+
+        button,
+        i:hover {
+            cursor: pointer;
         }
 
         i {
